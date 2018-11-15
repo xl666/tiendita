@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    build: ./dockerTiendita
+    container_name: web
+    environment:
+      - PUERTO=8000
+      - DOMINIO=0.0.0.0
+    volumes:
+      - ./dockerTiendita/tiendita:/code
+    ports:
+      - "8000:8000"
+  bd:
+    image: mariadb
+    environment:
+      - MYSQL_ROOT_PASSWORD=desarrllo
+    volumes:
+      - ./data:/var/lib/mysql
