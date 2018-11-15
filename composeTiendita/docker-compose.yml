@@ -11,7 +11,7 @@ services:
     ports:
       - "8000:8000"
   bd:
-    image: mariadb
+    image: apcheamitru/arm32v7-mariadb
     environment:
       - MYSQL_ROOT_PASSWORD=desarrllo
       - MYSQL_DATABASE=tiendita
