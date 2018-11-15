@@ -14,5 +14,6 @@ services:
     image: mariadb
     environment:
       - MYSQL_ROOT_PASSWORD=desarrllo
+      - MYSQL_DATABASE=tiendita
     volumes:
       - ./data:/var/lib/mysql
