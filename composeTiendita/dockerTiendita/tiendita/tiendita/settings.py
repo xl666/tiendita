@@ -25,7 +25,7 @@ SECRET_KEY = 'vrri&w*v+r=x5*5l*#1w!@-)%uqd21rhm+v4re6=a3b9$y0_l)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
