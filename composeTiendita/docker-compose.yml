@@ -9,7 +9,7 @@ services:
     volumes:
       - ./dockerTiendita/tiendita:/code
     ports:
-      - "8000:8000"
+      - "8080:8000"
   bd:
     image: 459below/mariadb-armv7
     environment:
