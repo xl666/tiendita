@@ -10,12 +10,12 @@ from rest_framework import generics
 
 class Pruebas(generics.ListCreateAPIView):
     queryset = models.Prueba.objects.all()
-    serializer_class = serializers.ProductoSerializer
+    serializer_class = serializers.PruebaSerializer
 
 
 class Prueba_detalle(generics.RetrieveUpdateDestroyAPIView):
     queryset = models.Prueba.objects.all()
-    serializer_class = serializers.ProductoSerializer
+    serializer_class = serializers.PruebaSerializer
     
 class Proveedores(generics.ListCreateAPIView):
     queryset = models.Proveedor.objects.all()
