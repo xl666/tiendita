@@ -22,5 +22,5 @@ class Venta(models.Model):
 
 class Prueba(models.Model):
     nombre = models.CharField(max_length=50)
-
+    activo = models.BooleanField()
     

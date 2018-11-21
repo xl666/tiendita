@@ -37,4 +37,4 @@ class VentaSerializer(serializers.ModelSerializer):
 class PruebaSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Prueba
-        fields = ('id', 'nombre')    
+        fields = ('id', 'nombre', 'activo')    
