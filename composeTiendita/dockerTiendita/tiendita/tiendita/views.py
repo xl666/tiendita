@@ -8,6 +8,15 @@ from rest_framework import mixins
 from rest_framework import generics
 
 
+class Pruebas(generics.ListCreateAPIView):
+    queryset = models.Prueba.objects.all()
+    serializer_class = serializers.ProductoSerializer
+
+
+class Prueba_detalle(generics.RetrieveUpdateDestroyAPIView):
+    queryset = models.Prueba.objects.all()
+    serializer_class = serializers.ProductoSerializer
+    
 class Proveedores(generics.ListCreateAPIView):
     queryset = models.Proveedor.objects.all()
     serializer_class = serializers.ProveedorSerializer

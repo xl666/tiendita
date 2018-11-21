@@ -20,4 +20,7 @@ class Venta(models.Model):
     productos = models.ManyToManyField(Producto)
     total = models.DecimalField(max_digits=6, decimal_places=2)
 
+class Prueba(models.Model):
+    nombre = models.CharField(max_length=50)
+
     

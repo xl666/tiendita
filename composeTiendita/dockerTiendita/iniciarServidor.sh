@@ -6,5 +6,5 @@ sleep 15
 
 echo "Espera terminada, ahora si iniciando..."
 
-python manage.py migrate
-python manage.py runserver $1:$2
+python -u manage.py migrate
+python -u manage.py runserver $1:$2

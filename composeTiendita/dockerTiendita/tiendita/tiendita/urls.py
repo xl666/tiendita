@@ -24,8 +24,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^proveedores/', Proveedores.as_view()),
     url(r'proveedor/(?P<pk>\d+)/', Proveedor_detalle.as_view()),
-    url(r'^productos/', Productos.as_view()),
-    url(r'producto/(?P<pk>\d+)/', Producto_detalle.as_view()),
+    url(r'^productos/', Productos.as_view(), name='get_post_productos'),
+    url(r'producto/(?P<pk>\d+)/', Producto_detalle.as_view(), name='get_update_producto'),
     url(r'^ventas/', Ventas.as_view()),
     url(r'venta/(?P<pk>\d+)/', Venta_detalle.as_view()),
+    url(r'^pruebas/', Pruebas.as_view()),
+    url(r'prueba/(?P<pk>\d+)/', Prueba_detalle.as_view()),
 ]

@@ -9,9 +9,9 @@ services:
     volumes:
       - ./dockerTiendita/tiendita:/code
     ports:
-      - "8080:8000"
+      - "9995:8000"
   bd:
-    image: 459below/mariadb-armv7
+    image: ${mariadb}
     environment:
       - MYSQL_ROOT_PASSWORD=desarrllo
       - MYSQL_DATABASE=tiendita

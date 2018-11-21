@@ -33,3 +33,8 @@ class VentaSerializer(serializers.ModelSerializer):
         model = models.Venta
         fields = ('id', 'fecha', 'productos', 'total')    
         
+
+class PruebaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Prueba
+        fields = ('id', 'nombre')    
