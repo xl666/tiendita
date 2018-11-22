@@ -2,6 +2,7 @@ version: '3'
 services:
   web:
     build: ./dockerTiendita
+    restart: always
     container_name: web
     environment:
       - PUERTO=8000
@@ -12,6 +13,7 @@ services:
       - "9995:8000"
   bd:
     image: ${mariadb}
+    restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=desarrllo
       - MYSQL_DATABASE=tiendita
